@@ -21,7 +21,6 @@ export class ProblemDetailComponent implements OnInit {
       this.problem = this.dataService.getProblem(+params['id']);
     })
 
-    console.log(this.problem);
   }
 
 }
