@@ -20,7 +20,7 @@ export const PROBLEMS: PROBLEM[] = [ {
 },
 {
   id: 4,
-  name:"Regular Expression Matchingg",
+  name:"Regular Expression Matching",
   description: "Implement regular expression matching with support for '.' and '*'..' Matches any single character.' Matches zero or more of the preceding element. he matching should cover the entire input string (not partial). The function prototype should be: bool isMatch(const char *s, const char *p)",
   difficulty: "hard"
 },

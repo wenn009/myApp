@@ -7,12 +7,14 @@ import { DataService } from  './service/data.service'
 import { AppComponent } from './app.component';
 import { ProblemListComponent } from './component/problem-list/problem-list.component';
 import { ProblemDetailComponent } from './component/problem-detail/problem-detail.component';
+import { NavigationBarComponent } from './component/navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProblemListComponent,
-    ProblemDetailComponent
+    ProblemDetailComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
