@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { ProblemListComponent } from './component/problem-list/problem-list.component';
 import { ProblemDetailComponent } from './component/problem-detail/problem-detail.component';
 import { NavigationBarComponent } from './component/navigation-bar/navigation-bar.component';
+import { NewProblemComponent } from './component/new-problem/new-problem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProblemListComponent,
     ProblemDetailComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    NewProblemComponent
   ],
   imports: [
     BrowserModule,
