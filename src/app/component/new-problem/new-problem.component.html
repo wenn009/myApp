@@ -1,3 +1,33 @@
-<p>
-  new-problem works!
-</p>
+<div>
+  <form #formRef= "ngForm">
+    <div class="form-group">
+      <label for="problemName">Problem Name: </label>
+          <input type="text" class="form-control" placeholder="Enter Problem Name" 
+          id="problemName" name="probelmName" required [(ngModel)]="newProblem.name">
+    </div>
+    <div class="form-group">
+      <label for="problemDescription">Problem Description: </label>
+          <input type="text" class="form-control" placeholder="Enter Problem Name" 
+          id="problemDescription" name="probelmDescription" required 
+          [(ngModel)]="newProblem.description">
+    </div>
+    <div class="form-group">
+      <label for="problemDifficulty">Problem Difficulty: </label>
+          <select class="form-control" [(ngModel)]="newProblem.difficulty" 
+          id="difficulty" name="problemDifficulty">
+            <option *ngFor="let difficulty of difficulties" [value] = "difficulty">
+              {{difficulty}}
+            </option>
+          </select>
+    </div>
+    <div class = "row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary pull-right"
+        (click)="addProblem()">Submit</button>
+      </div>
+    </div>
+  </form>
+  <p></p>
+</div>
+
+
