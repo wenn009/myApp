@@ -5,8 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './navigation-bar.component.html',
   styleUrls: ['./navigation-bar.component.css']
 })
+
 export class NavigationBarComponent implements OnInit {
   title :string = "C.O.J";
+  age : number =20;
   constructor() { }
 
   ngOnInit() {

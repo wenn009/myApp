@@ -9,7 +9,7 @@ import { PROBLEM } from 'app/component/data-model/problem';
 })
 export class ProblemListComponent implements OnInit {
   
-  problems: PROBLEM[];
+  problems: PROBLEM[] = [];
 
   constructor(@Inject('data') private dataService) { }
 
@@ -18,7 +18,9 @@ export class ProblemListComponent implements OnInit {
   }
 
   getProblems(): void {
-    this.problems = this.dataService.getProblems();
+    //this.problems = this.dataService.getProblems();
+    this.dataService.getProblems()
+      .subscribe(problems => this.problems = problems);
   }
 
 }

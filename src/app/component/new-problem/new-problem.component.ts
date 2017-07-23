@@ -24,11 +24,11 @@ export class NewProblemComponent implements OnInit {
   ngOnInit() {
   }
 
-  addProblem(){
-    console.log(this.newProblem.difficulty);
+  addProblem = () => { 
     this.DataService.addProblem(this.newProblem)
+      .catch(error => console.log(error.body));
     this.newProblem = Object.assign({}, DEFAULT_PROBLEM);
-   
+  
   }
 
 }
